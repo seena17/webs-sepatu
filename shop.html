@@ -1,0 +1,130 @@
+<html lang="id">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="icon" href="image/nbg.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Sepatu Nara</title>
+  <audio id="bg-music" autoplay loop>
+    <source src="image/wii.mp3" type="audio/mp3">
+    Browser Anda tidak mendukung audio.
+  </audio>
+  <button onclick="toggleMusic()" id="music-button">🔊</button>
+  
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+  <header class="header-kustom">
+    <img src="image/nbg.png" alt="Logo" class="logo">
+    <h1><span style="color: red;">Toko</span> <span style="color: rgb(0, 162, 255);">Sepatu</span> Nara</h1>
+  </header>
+  
+
+  <nav>
+    <a href="#" onclick="navigateTo('produk')">Produk</a>
+    <a href="#" onclick="navigateTo('login')">Login/Register</a>
+    <a href="#" onclick="navigateTo('kontak')">Kontak</a>
+    <a href="#" onclick="navigateTo('informasi')">Informasi</a>
+    <a href="#" onclick="navigateTo('keranjang')">Keranjang</a>
+    <a href="#" onclick="navigateTo('history')">Riwayat Pembelian</a>
+  </nav>
+
+  <div class="container">
+    <div id="produk" class="page active">
+      <h2>Daftar Produk Sepatu</h2>
+      <div id="product-list"></div>
+    </div>
+
+    <div id="register" class="page" style="display: none;">
+        <div class="login-container">
+          <h2>Daftar Akun</h2>
+<form onsubmit="daftarAkun(event)">
+  <input type="text" id="username" placeholder="Username" required><br>
+  <input type="password" id="password" placeholder="Password" required><br>
+  <button type="submit">Daftar</button>
+            <p>Sudah punya akun? <a href="#" onclick="navigateTo('login')">Login di sini</a></p>
+          </form>
+        </div>
+      </div>
+      
+
+    <div id="login" class="page">
+        <div class="login-container">
+          <h2>Login</h2>
+<form onsubmit="loginAkun(event)">
+  <input type="text" id="loginUsername" placeholder="Username" required><br>
+  <input type="password" id="loginPassword" placeholder="Password" required><br>
+  <button type="submit">Login</button>
+            <p>Belum punya akun? <a href="#" onclick="navigateTo('register')">Daftar di sini</a></p>
+          </form>
+        </div></div> 
+      
+      
+
+    
+
+    <center><div id="kontak" class="page">
+      <h2>Kontak Kami</h2>
+      <p>Email: narashoe@tokosepatu.com</p>
+      <p>Telepon: +62 815 1589 9806</p>
+      <p>Alamat: Jl. Kedungpedaringan Kepanjen Malang Jawa Timur</p>
+    </div></center>
+
+    <center><div id="informasi" class="page">
+      <h2>Informasi Toko</h2>
+      <p>Kami menyediakan berbagai jenis sepatu berkualitas tinggi dari brand ternama.</p>
+      <p>Visi kami adalah memberikan pelayanan terbaik dan produk terbaik bagi pelanggan.</p>
+    </div></center>
+
+    <div id="keranjang" class="page">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price"></p>
+        <button onclick="checkout()">Beli Sekarang</button>
+      </div>
+
+      <div id="invoice" class="page">
+        <h2>Invoice Pembelian</h2>
+        <ul id="invoice-items"></ul>
+        <p id="invoice-total"></p>
+        <button onclick="navigateTo('produk')">Kembali ke Produk</button>
+        <button onclick="printInvoiceToPDF()">Unduh Struk</button>
+      </div>
+      
+
+      <div id="history" class="page">
+        <h2>Riwayat Pembelian</h2>
+        <ul id="history-list"></ul>
+        <button onclick="navigateTo('produk')">Kembali ke Produk</button>
+      </div>
+
+      <div id="beranda" class="page">
+        <h2>Selamat Datang di Toko Sepatu Online</h2>
+        <button onclick="toggleMusic()">🎶 Play/Pause Musik</button>
+      </div>
+      
+      <div id="invoice" class="invoice-box">
+        <h2><p>Alamat: Jl. Sepatu No. 12, Jakarta | Email: info@tokosepatunara.com</p>
+          <p>Follow kami di Instagram: @tokosepatunara</p></h2>
+        <hr>
+      
+        <div class="gambar-dan-teks">
+          <img src="image/nbg.png" alt="Logo" width="80">
+          <h1>Toko Sepatu Nara</h1>
+        </div>
+        
+      
+  </div>
+
+    <footer style="background-color: #000000; color: white; padding: 5px; text-align: center;">
+      <p>&copy; 2025 Toko Sepatu Nara. All rights reserved.</p>
+
+  </footer>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>

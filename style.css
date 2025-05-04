@@ -1,0 +1,260 @@
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: rgb(236, 10, 10);
+  padding: 1rem;
+  text-align: left;
+}
+
+footer {
+background-color: #222;
+color: #eee;
+text-align: center;
+padding: 20px;
+font-size: 14px;
+}
+footer a {
+color: #ffd700;
+text-decoration: none;
+}
+
+
+.logo-container {
+display: flex;
+align-items: center;
+gap: 10px; /* jarak antara logo dan teks */
+}
+
+.logo {
+width: 105px; /* atur ukuran logo */
+height: auto;
+}
+
+
+nav {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.product {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product img {
+width: 80%;
+height: auto;
+border-radius: 5px;
+max-width: 200px;
+}
+
+
+.product h3 {
+  margin: 0.5rem 0;
+}
+
+.product p {
+  color: #555;
+}
+
+.product button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#invoice {
+padding: 2rem;
+background-color: #f4f4f4;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#invoice-items li {
+margin-bottom: 10px;
+font-size: 16px;
+}
+
+#invoice-total {
+font-weight: bold;
+font-size: 18px;
+margin-top: 20px;
+}
+
+#music-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #4CAF50;
+color: white;
+border: none;
+padding: 10px 14px;
+font-size: 18px;
+border-radius: 50%;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+cursor: pointer;
+z-index: 999;
+}
+
+
+
+.product button:hover {
+  background-color: #218838;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.page {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+button {
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+.login-container {
+max-width: 350px;
+margin: 80px auto;
+background: white;
+padding: 2rem;
+border-radius: 15px;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+text-align: center;
+}
+
+.login-container h2 {
+margin-bottom: 20px;
+color: #333;
+}
+
+.login-container input {
+width: 100%;
+padding: 10px 15px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 10px;
+font-size: 14px;
+}
+
+.login-container button {
+width: 100%;
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 10px;
+font-size: 16px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.login-container button:hover {
+background-color: #45a049;
+}
+
+.login-container p {
+margin-top: 15px;
+font-size: 14px;
+}
+
+.header-kustom {
+background-image: url('image/batik.jpg'); /* Ganti sesuai nama gambar kamu */
+background-size: cover;       /* Biar gambar menutupi seluruh area */
+background-position: center;  /* Tengah-tengah */
+background-repeat: no-repeat; /* Jangan diulang */
+padding: 20px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.produk {
+text-align: center;
+margin: 30px;
+}
+
+.gambar-utama img {
+width: 300px;
+height: auto;
+border-radius: 10px;
+}
+
+.galeri-thumbnail {
+margin-top: 10px;
+}
+
+.galeri-thumbnail img {
+width: 60px;
+height: 60px;
+margin: 5px;
+border-radius: 8px;
+cursor: pointer;
+transition: transform 0.3s;
+}
+
+.galeri-thumbnail img:hover {
+transform: scale(1.1);
+}
+
+.gambar-dan-teks {
+display: flex;
+align-items: center; /* vertikal tengah */
+gap: 10px; /* jarak antara gambar dan teks */
+}
+
+.gambar-dan-teks img {
+width: 80px;
+height: auto;
+}
